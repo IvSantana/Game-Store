@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./images/icon.png" type="image/gif">
+    <meta name="keywords" content="">
+    <meta name="Tienda De videojuegos" content="">
+    <meta name="Ivandro Santana" content="">
+    <title>Formulário de Compra</title>
+    <link rel="stylesheet" href="style_compra.css">
+</head>
+<body>
+
+  <div class="imagem">
+    <div class="img">
+      <img src="MSI_Meg_Trident_X.png" alt="" class="img-p">
+    </div>
+  </div>
+  
+  <div class="container">
+    <h2>PC GAMER</h2>
+    <form id="purchaseForm">
+      <!-- Dados de Preço -->
+      <div class="form-group">
+        <label for="produto">Modelos:</label>
+        <select id="produto" name="produto" required>
+          <option value="">Elije un Ordenador</option>
+          <option value="MSI Meg Trident X">MSI Meg Trident X</option>
+          <option value="Nitro PC AMZ">Nitro PC AMZ</option>
+          <option value="Beastcom Q3">Beastcom Q3</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="prazoEntrega">Plazo de entrega (en dias):</label>
+        <input type="number" id="prazoEntrega" name="prazoEntrega" required>
+      </div>
+      <div class="form-group">
+        <label for="direccion">Direccion:</label>
+        <input type="text" id="direccion" name="direccion" required>
+      </div>
+      <div class="form-group checkbox-group">
+        <label>Extras:</label>
+        <div class="checkbox-container">
+          <input type="checkbox" id="extra1" name="extra1" value="29">
+          <label for="extra1">Raton inalambrico (83€)</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="extra2" name="extra2" value="219">
+          <label for="extra2">Monitor Curvo (2.300€)</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="extra3" name="extra3" value="69.99">
+          <label for="extra3">Teclado gamer(18.99€)</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Valor Final:</label>
+        <span id="valorFinal">$0.00</span>
+      </div>
+
+      <button type="submit">Hacer Pedido</button>
+      <div class="link">
+        <a href="../../Views/Galeria.html">Volver a Galeria</a>
+      </div>
+    </form>
+
+    
+  
+   
+  </div>
+  <div id="mensagemPedido" class="mensagem-pedido"></div>
+  <script src="compras.js"></script>
+</body>
+</html>

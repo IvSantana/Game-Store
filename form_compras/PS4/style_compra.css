@@ -1,0 +1,247 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Arial', sans-serif;
+   background-color: #f8f8f8;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+.container {
+   display: flex;
+   max-width: 800px;
+   margin: 50px;
+   background-color: #fff;
+   border-radius: 8px;
+   overflow: hidden;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+   from {
+       opacity: 0;
+       transform: translateY(-20px);
+   }
+   to {
+       opacity: 1;
+       transform: translateY(0);
+   }
+}
+
+.imagem {
+   margin-left: 130px;
+   flex: 1;
+   width:  571px;
+   height:652px;
+   overflow: hidden;
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   animation: fadeIn 0.5s ease-in-out;
+}
+
+.img{
+   width: 405px;
+   
+}
+
+.imagem img {
+  margin-left:130px;
+   width: 550px;
+   height: 640px;
+   object-fit: cover;
+   
+}
+
+.img-p{
+   width: 520px;
+   margin-left: 50px;
+   position: relative;
+}
+
+
+
+.container {
+   flex: 1;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+   from {
+       opacity: 0;
+       transform: translateX(-20px);
+   }
+   to {
+       opacity: 1;
+       transform: translateX(0);
+   }
+}
+
+h2 {
+   text-align: center;
+   color: #333;
+   margin-bottom: 20px;
+}
+
+form {
+   width: 100%;
+   max-width: 400px;
+}
+
+.form-group {
+   margin-bottom: 20px;
+}
+
+label {
+   display: block;
+   font-weight: bold;
+   margin-bottom: 5px;
+}
+
+select,
+input[type="number"] {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-sizing: border-box;
+   margin-top: 5px;
+}
+select,
+input[type="text"] {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-sizing: border-box;
+   margin-top: 5px;
+}
+
+.checkbox-group {
+   display: flex;
+   flex-direction: column;
+}
+
+.checkbox-container {
+   display: flex;
+   align-items: center;
+}
+
+.checkbox-container input {
+   margin-right: 5px;
+}
+
+#valorFinal {
+   display: block;
+   font-size: 18px;
+   margin-top: 5px;
+   color: #8019c8;
+}
+
+button {
+   background-color: #8019c8;
+   color: #fff;
+   padding: 10px 15px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+button:hover {
+   background-color: #541184;
+}
+
+@media (max-width: 768px) {
+   .container {
+       flex-direction: column;
+       max-width: 100%;
+       border-radius: 0;
+       box-shadow: none;
+   }
+
+   .imagem,
+   .container {
+       width: 100%;
+   }
+
+   .imagem img {
+       height: auto;
+   }
+}
+
+/* Adicione ao seu arquivo "style compra.css" */
+.mensagem-pedido {
+   display: none;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0.7);
+   background-color: rgba(255, 255, 255, 0.9); /* Use um valor de opacidade que preferir */
+   border: 1px solid #ccc;
+   padding: 20px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   z-index: 9999;
+   opacity: 0;
+   animation: fadeInOut 5s ease-in-out;
+   backdrop-filter: blur(5px); /* Ajuste o valor do desfoque conforme necessário */
+}
+
+
+
+.overlay {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: 9998;
+}
+
+@keyframes fadeInOut {
+   0% {
+       opacity: 0;
+       transform: scale(0.7);
+   }
+   10% {
+       opacity: 1;
+       transform: scale(1.1);
+   }
+   90% {
+       opacity: 1;
+       transform: scale(1.1);
+   }
+   100% {
+       opacity: 0;
+       transform: scale(0.7);
+   }
+}
+
+.link  {
+   display: inline;
+   padding-left: 8px;
+
+}
+
+.link a{
+
+   text-decoration: none;
+   color: #8019c8;
+   transform: ease 3000mm;
+}
+
+.link a:hover{
+   animation: fadeInOut 5s ease-in-out;
+   border-bottom: #541184 solid 4px;
+   color:#8019c8;
+
+}
