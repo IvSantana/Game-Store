@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="../images/icon.png" type="image/gif">
+  <meta name="keywords" content="">
+  <meta name="description" content="Tienda De videojuegos">
+  <meta name="author" content="Ivandro Santana">
+  <title>Game Store</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link href="../css/font-awesome.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css">
+</head>
+
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!--Cabeçalho-->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="../index.html">
+            <span>
+              GameStore
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item ">
+                <a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> Nuestra Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Reseñas.html">Reseñas</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contactos</a>
+              </li>
+            </ul>
+            <div class="user_optio_box">
+              <a href="">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+  </div>
+  <!--Cabeçalho-->
+
+
+  <!--Contactos-->
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Ponte en contacto con nosotros
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container">
+            <form>
+              <div>
+                <input type="text" placeholder="Su nombre">
+              </div>
+              <div>
+                <input type="text" placeholder="Telefono">
+              </div>
+              <div>
+                <input type="email" placeholder="Email">
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Mensage">
+              </div>
+              <div class="btn_box">
+                <button>
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="map_container">
+            <div class="map" id="map"></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Contactos-->
+
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="info_logo">
+        <h2>
+          GameStore
+        </h2>
+      </div>
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h5>
+              Sobre la tienda
+            </h5>
+            <div>
+              <div class="img-box">
+                <img src="../images/location-white.png" width="18" alt="">
+              </div>
+              <p>
+                Calle de Alonso Cano, 44, 46, 28003, Madrid
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="../images/telephone-white.png" width="12" alt="">
+              </div>
+              <p>
+                +34 631 833 571
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="../images/envelope-white.png" width="18" alt="">
+              </div>
+              <p>
+                madrid@masterd.es
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5>
+              Información
+            </h5>
+            <p>
+              Tu tienda de videojuegos en línea: calidad y diversión garantizadas. ¡Descubre y juega con confianza!
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info_insta">
+            <h5>
+              Instagram
+            </h5>
+            <div class="insta_container">
+              <div class="row m-0">
+                <div class="col-4 px-0">
+                  <a href="https://www.instagram.com/masterdformacion/">
+                    <div class="insta-box b-1">
+                      <img src="../images/PS4.png" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-4 px-0">
+                  <a href="https://www.instagram.com/masterdformacion/">
+                    <div class="insta-box b-1">
+                      <img src="../images/PS5.png" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-4 px-0">
+                  <a href="https://www.instagram.com/masterdformacion/">
+                    <div class="insta-box b-1">
+                      <img src="../images/XBOXS.png" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-4 px-0">
+                  <a href="https://www.instagram.com/masterdformacion/">
+                    <div class="insta-box b-1">
+                      <img src="../images/ComandosPs5.jpg" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-4 px-0">
+                  <a href="https://www.instagram.com/masterdformacion/">
+                    <div class="insta-box b-1">
+                      <img src="../images/XBOXX.png" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-4 px-0">
+                  <a href="https://www.instagram.com/masterdformacion/">
+                    <div class="insta-box b-1">
+                      <img src="../images/Pc_gamer.png" alt="">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5>
+              Boletín
+            </h5>
+            <form>
+              <input type="email" placeholder="Su email">
+              <button>
+                Subscribir
+              </button>
+            </form>
+            <div class="social_box">
+              <a href="">
+                <img src="../images/fb.png" alt="">
+              </a>
+              <a href="">
+                <img src="../images/twitter.png" alt="">
+              </a>
+              <a href="">
+                <img src="../images/linkedin.png" alt="">
+              </a>
+              <a href="">
+                <img src="../images/youtube.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer_section">
+    <h2 hidden>Autor:</h2>
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://www.masterd.es/delegaciones/madrid/6200">Ivandro Santana</a>
+      </p>
+    </div>
+  </section>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+  <script src="../js/Mapa.js"></script>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script src="../js/custom.js"></script>
+
+
+</body>
+
+</html>
